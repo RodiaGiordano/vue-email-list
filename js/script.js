@@ -1,7 +1,3 @@
-
-
-
-
 const { createApp } = Vue
 
 createApp({
@@ -11,6 +7,7 @@ createApp({
 
       listMail: [],
       
+      search: false,
         
     }
   },
@@ -18,7 +15,8 @@ createApp({
   methods:{
     
     takeMail(){
-
+      this.search = true
+      this.listMail = []
         for(let i = 0; i < 10; i++){
     
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((mail)=>{

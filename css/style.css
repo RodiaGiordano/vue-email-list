@@ -1,0 +1,15 @@
+.wrapper{
+    padding: 100px;
+}
+
+i{
+    margin-top: 40px;
+    animation-name: search;
+    animation-duration: 1s;
+}
+
+
+@keyframes search{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
